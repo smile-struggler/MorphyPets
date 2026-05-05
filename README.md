@@ -8,16 +8,13 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/smile-struggler/MorphyPets/raw/main/dist/Morphy-Pets-0.1.0-mac.zip">
-    <b>⬇️ 直接下载 Morphy Pets 0.1.0 (macOS · Universal)</b>
+  <a href="https://www.bilibili.com/video/BV1oBR1BxEFJ">
+    <b>▶️ 在哔哩哔哩观看介绍视频</b>
   </a>
-</p>
-
-<p align="center">
-  <video src="https://github.com/smile-struggler/MorphyPets/raw/main/docs/intro.mp4"
-         controls muted playsinline width="720">
-    你的浏览器不支持直接播放，<a href="docs/intro.mp4">点这里下载介绍视频</a>。
-  </video>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/smile-struggler/MorphyPets/raw/main/dist/Morphy-Pets-0.1.0-mac.zip">
+    <b>⬇️ 下载 Morphy Pets 0.1.0 (macOS · Universal)</b>
+  </a>
 </p>
 
 ---
