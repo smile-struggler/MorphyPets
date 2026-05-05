@@ -1,4 +1,5 @@
 import AppKit
+import ApplicationServices
 import SwiftUI
 import FocusMonitor
 
@@ -83,21 +84,25 @@ struct DiagnosticsView: View {
 
     private func fixAccessibilityPermission() {
         let bundleID = Bundle.main.bundleIdentifier ?? "com.morphypets.app"
+
         let task = Process()
         task.launchPath = "/usr/bin/tccutil"
         task.arguments = ["reset", "Accessibility", bundleID]
         try? task.run()
         task.waitUntilExit()
 
-        let alert = NSAlert()
-        alert.messageText = "已清除旧授权"
-        alert.informativeText = "TCC 里 Morphy Pets 的旧条目已删除。接下来系统设置会打开，请在「辅助功能」列表里把 Morphy Pets 勾上即可（如果还在列表里，先点减号删掉再用加号加回来）。"
-        alert.addButton(withTitle: "打开系统设置")
-        alert.addButton(withTitle: "稍后")
-        if alert.runModal() == .alertFirstButtonReturn,
-           let u = URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility") {
+        let promptKey = kAXTrustedCheckOptionPrompt.takeUnretainedValue() as String
+        _ = AXIsProcessTrustedWithOptions([promptKey: true] as CFDictionary)
+
+        if let u = URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility") {
             NSWorkspace.shared.open(u)
         }
+
+        let alert = NSAlert()
+        alert.messageText = "已清除旧授权，Morphy Pets 已重新登记"
+        alert.informativeText = "系统设置已打开到「辅助功能」。在列表里找到 Morphy Pets（应该已经自动加回来了），把右侧开关打开即可。\n\n如果列表里还没有它，点 \"+\" 把 /应用程序/Morphy Pets.app 加进来。\n\n授权改动会立即生效，不需要重启 app。"
+        alert.addButton(withTitle: "好")
+        alert.runModal()
     }
 
     @ViewBuilder
