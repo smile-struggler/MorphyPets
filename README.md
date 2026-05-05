@@ -11,8 +11,13 @@
   <a href="https://github.com/smile-struggler/MorphyPets/raw/main/dist/Morphy-Pets-0.1.0-mac.zip">
     <b>⬇️ 直接下载 Morphy Pets 0.1.0 (macOS · Universal)</b>
   </a>
-  &nbsp;·&nbsp;
-  <a href="docs/intro.mp4">▶️ 介绍视频 (20s · 20MB)</a>
+</p>
+
+<p align="center">
+  <video src="https://github.com/smile-struggler/MorphyPets/raw/main/docs/intro.mp4"
+         controls muted playsinline width="720">
+    你的浏览器不支持直接播放，<a href="docs/intro.mp4">点这里下载介绍视频</a>。
+  </video>
 </p>
 
 ---
@@ -57,8 +62,9 @@ swift run MorphyPets          # 开发模式，Ctrl-C 退出
 ### 🐾 宠物与动画
 - 复用 Codex Pets 的 `pet.json` + spritesheet（webp/png）格式，8 列 × 9 行网格
 - 动画状态机：`idle / happy / focused / nag / angry / block / sleep / walk / talk`
-- 内置 ikun（开箱即用，无需 Codex）
+- **内置 6 套皮肤**（开箱即用，无需 Codex）：`ikun` / `cache-capy` / `daodun` / `mallow` / `nezuko` / `steve`
 - 设置 → 宠物库：扫描导入 Codex / 文件夹导入 / 排序 / 卸载
+- 想要更多皮肤？去 **[petdex.crafter.run](https://petdex.crafter.run/)** 下载，然后在设置 → 宠物库一键导入 🎨
 
 ### 📅 日历 & 自然语言排程
 - EventKit 全访问 + `.EKEventStoreChanged` 订阅 + 兜底轮询（外部改日历也能感知）
@@ -177,7 +183,8 @@ LLM API Key 可跳过，纯本地模式仍能用 **日历提醒 + 宠物动画 +
 ## 致谢
 
 - [OpenAI Codex Pets](https://developers.openai.com/codex/cli/features) —— 宠物资源格式与 spritesheet 美术启发
-- 内置宠物 `ikun` 美术 © 其原作者，感谢社区贡献
+- **[PetDex · petdex.crafter.run](https://petdex.crafter.run/)** —— 社区的宠物皮肤仓库，想要更多皮肤就去这里逛，感谢运营者持续收录 ❤️
+- 内置的 6 套皮肤（`ikun` / `cache-capy` / `daodun` / `mallow` / `nezuko` / `steve`）美术 © 各自原作者，感谢社区贡献
 
 ## 许可
 

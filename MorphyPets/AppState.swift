@@ -246,11 +246,13 @@ final class AppState: ObservableObject {
     }
 
     private func bootstrap() {
-        // 1. Built-in ikun.
-        let bundled = Bundle.module.url(forResource: "Pets/ikun", withExtension: nil)
-            ?? Bundle.module.url(forResource: "ikun", withExtension: nil, subdirectory: "Pets")
-        if let bundled {
-            _ = try? petLibrary.ensureBuiltinIkun(bundledAt: bundled)
+        // 1. Built-in pets — seed every pet bundled under Resources/Pets/ on first launch.
+        let bundledParent = Bundle.module.url(forResource: "Pets", withExtension: nil)
+        _ = petLibrary.ensureBundledSeeds(bundledParentDir: bundledParent)
+        // Legacy fallback: older releases only bundled ikun at Pets/ikun.
+        if let legacy = Bundle.module.url(forResource: "Pets/ikun", withExtension: nil)
+            ?? Bundle.module.url(forResource: "ikun", withExtension: nil, subdirectory: "Pets") {
+            _ = try? petLibrary.ensureBuiltinIkun(bundledAt: legacy)
         }
         if let pet = petLibrary.installedPets().first {
             activate(pet: pet)

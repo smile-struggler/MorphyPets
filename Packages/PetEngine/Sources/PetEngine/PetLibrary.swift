@@ -113,4 +113,23 @@ public final class PetLibrary {
         }
         return manifest
     }
+
+    /// Seed every pet subdirectory under `bundledParentDir` into the store on first launch.
+    /// Pets already present on disk are skipped so the user's reorder / uninstall choices survive upgrades.
+    @discardableResult
+    public func ensureBundledSeeds(bundledParentDir: URL?) -> [PetManifest] {
+        guard let parent = bundledParentDir,
+              let entries = try? fm.contentsOfDirectory(at: parent, includingPropertiesForKeys: nil)
+        else { return [] }
+        var seeded: [PetManifest] = []
+        for dir in entries where dir.hasDirectoryPath {
+            guard let manifest = try? PetManifest.load(from: dir) else { continue }
+            let dest = storeDirectory.appendingPathComponent(manifest.id, isDirectory: true)
+            if !fm.fileExists(atPath: dest.path) {
+                try? fm.copyItem(at: dir, to: dest)
+            }
+            seeded.append(manifest)
+        }
+        return seeded
+    }
 }
