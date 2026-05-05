@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="https://www.bilibili.com/video/BV1oBR1BxEFJ" title="点击在哔哩哔哩观看介绍视频">
-    <img src="https://img.shields.io/badge/%E2%96%B6%EF%B8%8E%20%E5%9C%A8%20B%20%E7%AB%99%E8%A7%82%E7%9C%8B%E4%BB%8B%E7%BB%8D%E8%A7%86%E9%A2%91-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white" alt="▶️ 在 B 站观看介绍视频" height="40" />
+    <img src="https://img.shields.io/badge/%E2%96%B6%EF%B8%8E%20%E5%9C%A8%20B%20%E7%AB%99%E8%A7%82%E7%9C%8B%E4%BB%8B%E7%BB%8D%E8%A7%86%E9%A2%91-FB7299?style=for-the-badge&logo=bilibili&logoColor=white&labelColor=FB7299" alt="▶️ 在 B 站观看介绍视频" height="40" />
   </a>
   &nbsp;
   <a href="https://github.com/smile-struggler/MorphyPets/raw/main/dist/Morphy-Pets-0.1.0-mac.zip">
@@ -22,6 +22,9 @@
 ## 这是什么
 
 Morphy Pets 是一款 macOS 桌面陪伴应用（**[📺 点这里看 B 站介绍视频](https://www.bilibili.com/video/BV1oBR1BxEFJ)**）。它把 OpenAI Codex Pets 的像素宠物"皮"借过来，配上一副能打的"骨"：
+
+> 💰 **极度省 token**：LLM 只在你真分心、主动排日程、晚上生成日报这几个离散时刻才触发一次，每次输出都是 1-2 句短话；不是像某些竞品那样让大模型全天在后台"陪聊"。配合内置规则缓存 + 每人格 8 条静态 fallback 台词池，**一整天的使用量通常只有几分钱**（用 DeepSeek / Kimi / 通义等国产便宜模型），比那些按分钟烧 token 的桌宠应用便宜一个数量级。
+
 
 - 📅 **日历提醒** —— 读取系统日历，事件开始前让宠物提前提醒你
 - 🗣️ **自然语言排程** —— "十秒后刷牙，再过 5 分钟吃饭"，一句话拆成多个日历事件
