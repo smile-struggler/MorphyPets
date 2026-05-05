@@ -1,0 +1,13 @@
+.DS_Store
+.build/
+dist/Morphy Pets.app/
+.swiftpm/
+build/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+.env
+.env.local
+xcuserdata/
+*.xcuserstate
+Package.resolved
