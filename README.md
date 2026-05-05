@@ -9,11 +9,11 @@
 
 <p align="center">
   <a href="https://www.bilibili.com/video/BV1oBR1BxEFJ" title="点击在哔哩哔哩观看介绍视频">
-    <img src="https://img.shields.io/badge/%E2%96%B6%EF%B8%8E%20%E5%9C%A8%20B%20%E7%AB%99%E8%A7%82%E7%9C%8B%E4%BB%8B%E7%BB%8D%E8%A7%86%E9%A2%91-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white" alt="▶️ 在 B 站观看介绍视频" width="320" height="52" />
+    <img src="https://img.shields.io/badge/%E2%96%B6%EF%B8%8E%20%E5%9C%A8%20B%20%E7%AB%99%E8%A7%82%E7%9C%8B%E4%BB%8B%E7%BB%8D%E8%A7%86%E9%A2%91-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white" alt="▶️ 在 B 站观看介绍视频" height="40" />
   </a>
-  &nbsp;&nbsp;
+  &nbsp;
   <a href="https://github.com/smile-struggler/MorphyPets/raw/main/dist/Morphy-Pets-0.1.0-mac.zip">
-    <img src="https://img.shields.io/badge/%E2%AC%87%EF%B8%8E%20%E4%B8%8B%E8%BD%BD%20Morphy%20Pets%200.1.0-24292F?style=for-the-badge&logo=apple&logoColor=white" alt="⬇️ 下载 Morphy Pets 0.1.0" width="320" height="52" />
+    <img src="https://img.shields.io/badge/%E2%AC%87%EF%B8%8E%20%E4%B8%8B%E8%BD%BD%20Morphy%20Pets%200.1.0-24292F?style=for-the-badge&logo=apple&logoColor=white" alt="⬇️ 下载 Morphy Pets 0.1.0" height="40" />
   </a>
 </p>
 
@@ -21,7 +21,7 @@
 
 ## 这是什么
 
-Morphy Pets 是一款 macOS 桌面陪伴应用（**[📺 点这里看 B 站介绍视频](https://www.bilibili.com/video/BV1oBR1BxEFJ)**，30 秒感受一下）。它把 OpenAI Codex Pets 的像素宠物"皮"借过来，配上一副能打的"骨"：
+Morphy Pets 是一款 macOS 桌面陪伴应用（**[📺 点这里看 B 站介绍视频](https://www.bilibili.com/video/BV1oBR1BxEFJ)**）。它把 OpenAI Codex Pets 的像素宠物"皮"借过来，配上一副能打的"骨"：
 
 - 📅 **日历提醒** —— 读取系统日历，事件开始前让宠物提前提醒你
 - 🗣️ **自然语言排程** —— "十秒后刷牙，再过 5 分钟吃饭"，一句话拆成多个日历事件
