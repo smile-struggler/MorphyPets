@@ -8,12 +8,12 @@
 </p>
 
 <p align="center">
-  <a href="https://www.bilibili.com/video/BV1oBR1BxEFJ">
-    <b>▶️ 在哔哩哔哩观看介绍视频</b>
+  <a href="https://www.bilibili.com/video/BV1oBR1BxEFJ" title="点击在哔哩哔哩观看介绍视频">
+    <img src="https://img.shields.io/badge/%E2%96%B6%EF%B8%8E%20%E5%9C%A8%20B%20%E7%AB%99%E8%A7%82%E7%9C%8B%E4%BB%8B%E7%BB%8D%E8%A7%86%E9%A2%91-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white" alt="▶️ 在 B 站观看介绍视频" />
   </a>
-  &nbsp;·&nbsp;
+  &nbsp;
   <a href="https://github.com/smile-struggler/MorphyPets/raw/main/dist/Morphy-Pets-0.1.0-mac.zip">
-    <b>⬇️ 下载 Morphy Pets 0.1.0 (macOS · Universal)</b>
+    <img src="https://img.shields.io/badge/%E2%AC%87%EF%B8%8E%20%E4%B8%8B%E8%BD%BD%20Morphy%20Pets%200.1.0-24292F?style=for-the-badge&logo=apple&logoColor=white" alt="⬇️ 下载 Morphy Pets 0.1.0" />
   </a>
 </p>
 
@@ -40,8 +40,6 @@ Morphy Pets 是一款 macOS 桌面陪伴应用。它把 OpenAI Codex Pets 的像
    （Gatekeeper 会警告一次，因为没做付费公证。这是唯一的门槛。）
 4. 菜单栏出现 🐾 图标后，授权日历 + 辅助功能（用于读浏览器 URL）
 5. 打开设置 → LLM，填 `base URL` + `API Key` + `model`（默认占位 DeepSeek；兼容任何 OpenAI 协议：Kimi、通义、Ollama、OpenAI 本家都行）
-
-> 想看效果？先看 [20 秒介绍视频](docs/intro.mp4)。
 
 ### 方式 B · 从源码编译
 
